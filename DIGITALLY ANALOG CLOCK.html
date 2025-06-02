@@ -1,0 +1,222 @@
+<!doctype html>
+ <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>digital analog clock </title>
+ <link rel="stylesheet" href="styles.css">
+ </head>
+<style>
+  *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', Times, serif;
+   color:#ffffff;
+       }
+       body{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background:#ffff;
+       }
+       .clock{
+    position:relative;
+       width: 450px;
+              height: 550px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50px;
+             border-top-right-radius: 250px;
+       border-top-left-radius: 250px;
+       background: #c9d5e0;
+       box-shadow: 45px 45px 45px -15px rgba(0,0,0,0.15), inset 15px 15px 10px rgba(255,255,255,0.75), 
+       -15px -15px 35px rgba(0255,255,255,0.55), inset -2px =2px 15px rgba(0,0,0,0.2), 
+   }
+   .numbers{
+    position: absolute;
+    top: 30px;
+    width: 390px;
+    height: 390px;
+    background: #152b4a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), 
+    -9px -9px 15px rgba(255,255,255,1);
+    }
+    .numbers span{
+      position: absolute;
+      inset:15px;
+            text-align: center;
+          color:#fff;
+        font-size: 1.25em;
+        transform: rotate(calc(30deg*var(--i)));
+         
+    } 
+    .numbers span b{
+        font-weight: 400;
+        display: inline-block;
+        transform:rotate(calc(-30deg*var(--i)));
+      }
+      .numbers .circle{
+        position: absolute;
+        width: 280px;
+        height: 280px;
+      /* /*  border:1px solid #fff;  */
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                z-index: 10;
+      } 
+      .numbers .circle i{
+        position: absolute;
+        width:6px;
+        height: 50%;
+        background: var(--clr);
+        opacity: 0.75;
+        transform-origin: bottom;
+        transform: scaleY(0.5);
+       }
+      .numbers .circle#sec i{
+        width: 2px;
+      }
+      .numbers .circle#min i{
+        width: 4px;
+      }
+      .numbers .circle#min{
+        width:230px;
+        height:230px;
+      }
+     .numbers .circle#hrs{
+        width:180px;
+        height:180px;
+      }  
+      .numbers .circle::before{
+        content: '';
+        position: absolute;
+        top:-6px;
+        left:50%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--clr);
+        transform: translateX(-50%);
+        box-shadow: 0 0 20px var(--clr),0 0 60px var(--clr);
+           }
+           #time{
+            position: absolute;
+            bottom: 45px;
+            display: flex;
+            padding: 10px 60px;
+            font-size: 2em;
+            font-weight: 600;
+            border-radius: 40px;
+            background: #152b4a;
+            box-shadow: 7px 7px 22px #152b4a66, inset 7px 7px 7px rgba(255,255,255,0.55), 
+    -9px -9px 15px rgba(255,255,255,1);
+           }
+           #time div{
+            position: relative;
+            width: 60px;
+            text-align: center;
+            color:var(--clr);
+            opacity: 0.75;
+           }
+           #time div:nth-child(1)::after,   
+           #time div:nth-child(2)::after{
+            content:':';
+            position: absolute;
+            right: -2px;
+                    }    
+                    #time div:nth-child(2)::after{
+                        animation: animate 1s steps(1) infinite;
+                    }
+                    @keyframes animate{
+                        0%{
+                            opacity:1;
+                        }
+                        50%{
+                            opacity:0;
+                        }
+                    }
+     
+  </style>
+  <body>
+       <div class="clock"> 
+    <div class="numbers">
+        <div class="circle" id="sec" style="--clr:#04fc43;"><i></i></div>
+        <div class="circle" id="min" style="--clr:#00a6ff;"><i></i></div>
+        <div class="circle" id="hrs" style="--clr:#ff0000;"><i></i></div>
+        <span style="--i:0;"><b>XII</b></span> 
+        <span style="--i:1;"><b>I</b></span>
+         <span style="--i:2;"><b>II</b></span>
+         <span style="--i:3;"><b>III</b></span>
+         <span style="--i:4;"><b>IIII</b></span>
+         <span style="--i:5;"><b>V</b></span>
+         <span style="--i:6;"><b>VI</b></span>
+         <span style="--i:7;"><b>VII</b></span>
+         <span style="--i:8;"><b>VIII</b></span>
+         <span style="--i:9;"><b>IX</b></span>
+         <span style="--i:10;"><b>X</b></span>
+         <span style="--i:11;"><b>XI</b></span>
+             </div>
+              <!--DIGITAL CLOCK-->
+    <div id="time">
+      <div id="hour" style="--clr:#00a6ff;">00</div>
+      <div id="minute" style="--clr:#fee000;">00</div>
+      <div id="seconds" style="--clr:#04fc43;">00</div>
+  </div>
+    </div> 
+  <script>
+      let hr=document.querySelector('#hrs');
+      let mn=document.querySelector('#min');
+      let sc=document.querySelector('#sec');
+           
+      setInterval(()=>{
+      let day = new Date();
+      let hh=day.getHours()*30;
+      let mm=day.getMinutes()*6; 
+      let ss=day.getSeconds()*6; 
+     
+      
+             hr.style.transform =`rotateZ(${hh+(mm/12)}deg)`;
+             min.style.transform =`rotateZ(${mm}deg)`;
+             sc.style.transform =`rotateZ(${ss}deg)`;
+
+              //DIGITAL CLOCK CODE
+      
+      let hour=document.getElementById('hour');
+      let minutes=document.getElementById('minutes');
+      let seconds=document.getElementById('seconds');
+
+      let h=new Date().getHours();
+      let m=new Date().getMinutes();
+      let s=new Date().getSeconds();
+
+     //ADDITION OF ZERO BEFORE SINGLE DIGIT NUMERALS
+    h=(h<10)?"0"+h:h;
+    m=(m<10)?"0"+m:m;
+    s=(s<10)?"0"+s:s;
+
+    /*   h = (h<10) ? "0"+ h : h;
+      m = (m<10) +  "0"+ m : m;
+      s=(s<10) + "0"+ s : s;  */
+
+
+      hour.innerHTML=h;
+      minute.innerHTML=m;
+      seconds.innerHTML=s;
+     
+          });
+
+</script>
+ 
+</body>
+</html>
+             
