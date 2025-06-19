@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ACCORDION-CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+        font-family: arial,sens-sarif;
+        background: #ecf0f1;
+        }
+        .header{
+            padding: 15px;
+            margin-left: 50px;
+            width:80%;
+            background-color:wheat;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:large;
+            display:block;
+            border:2px solid red;
+        }
+        table{
+            border:1px soild black;
+            border-collapse: collapse;
+            font-size:17px;
+                }      
+                tr,td{
+                    background-color: azure;
+                    border:1px solid black;
+                    padding:10px;
+                   margin:5px;
+                   tex-align:justify;
+                                    }
+                                    th{font-weight: bold;
+                                     
+                                text-align: center;}
+       
+        .accordion{
+            width: 80%;
+            margin: 50px;
+            background:linen;
+        }
+        .accordian-tab .accordion-toggle{
+            display:none;
+        }
+        .accordian-tab>label{
+            color:#fff;
+            background:maroon;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+            position: relative;
+            padding:12px 50px;
+            display: block;
+            cursor:pointer;
+            border-top: 1px solid #ddd;
+        }
+        .accordian-tab > .accordion-content{
+            max-height: 0;
+            transition: all 0.4s;
+            overflow: hidden;
+        }
+        .accordian-tab > .accordion-toggle:checked~ .accordion-content{
+            max-height: 700vh;
+            padding: 20px;
+
+        }
+         </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="text-align: center;">CURRICULUM VITAE</h1>
+           <b>GIRISH GAUR</b><br>
+            25, ANJANI VIHAR<br>
+            PAPER MILL ROAD<br>
+            SAHARANPUR-247 001<br>
+                U.P.<br>
+                E-mail:girish.garry4u@gmail.com<BR>
+                    Cell#+91-790 628 4866<br>
+                              885 966 2533
+         </div>
+            <div class="accordion">
+        <div class="accordian-tab">
+            <input type="checkbox" id="toggle1" class="accordion-toggle" name="toggle">
+            <label for="toggle1">OBECTIVE</label> 
+            <div class="accordion-content">
+               <p> To work with a Progressive Organisation to persue in FRONT DESK EXECUTIVE, Administrative or HR Mnagement streams.which provides me ample opportunities to implement and enhance my
+                abilities, to excel in my profession and to contribute effectively to the
+                Society. I've vast experience of <b>28 years </b> as <b>EXECUTIVE (I.T)</b> in <b>STAR PAPER MILLS LTD.,SAHARANPUR, a flagship company of DUNCAN-GOENKA group</b> My objective is also to synergies the leadership abilities and managerial capabilities
+                through dedicated efforts. I seek such  opportunities where I can
+                fully use my skills for the success of the organization.
+            
+                </p>
+            </div>
+        </div>
+        <div class="accordian-tab">
+            <input type="checkbox" id="toggle2" class="accordion-toggle" name="toggle">
+            <label for="toggle2">KEY RESULT AREAS</label> 
+            <div class="accordion-content">
+                <table>
+                    <tr>
+                        <th colspan="4">KEY RESULT AREAS</th>
+                    </tr>
+                                    <tr>
+                                <th>YEAR</th>
+                                <TH>ORGANSATION</TH>
+                                <th>DESIGNATION</th>
+                                <th>JOB PROFILE</th>
+                                            </tr>
+                                            <tr>
+                                                <td>JAN, 2023-APR,2020</td>
+                                                <td>STAR PAPER MILLS LTD, SAHARANPUR</td>
+                                                <td>EXECUTIVE (I.T)</td>
+                                                <td>NETWORK MANAGEMENT<br>
+                                                    THIN CLIENT TROUBLESHOOTING<br>
+                                                    BACKUP MANAGEMENT OF ORACLE SERVER<br>
+                                                    DOCUMENTATION OF ERP APPLICATION</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MAY, 2014-APR,2020</td>
+                                                <td>STAR PAPER MILLS LTD, SAHARANPUR</td>
+                                                <td>SR OFFICER (I.T)</td>
+                                                                                    <td>INVENTORY MANAGEMENT<br>
+                                                    EXPORT BACKUP MANAGEMENT<br>
+                                                    DECKLE SOFTWARE MANAGEMENT<br>
+                                                                                        USER'S COMPLAINT MANAGEMENT<br>
+                                                    INSTALLATION & MAINTENANCE OF REDHAT &
+                                                    FEDORA OS<br>
+                                                     BACKUP MANAGEMENT OF ORACLE SERVER<br>
+                                                    DOCUMENTATION OF ERP APPLICATION</td>
+                                            </tr>
+            
+             <tr>
+                                                <td>MAY, 2008-APR,2014</td>
+                                                <td>STAR PAPER MILLS LTD, SAHARANPUR</td>
+                                                <td>OFFICER (I.T)</td>
+                                                <td>NETWORK MANAGEMENT<br>
+                                                    USER'S COMPLAINT MANAGEMENT<br>
+                                                    INSTALLATION & MAINTENANCE OF REDHAT &
+                                                    FEDORA OS<br>
+                                                     BACKUP MANAGEMENT OF ORACLE SERVER<br>
+                                                    MAITENANCE & INSTALLATION OF THIN CLIENT ARCHITECTURE</td>
+                                            </tr>
+                                            <tr>
+                                                <td>MAR, 1993-APR,2008</td>
+                                                <td>STAR PAPER MILLS LTD, SAHARANPUR</td>
+                                                <td>ASST OFFICER (I.T)</td>
+                                                <td>COMPILATION OF <b>MANAGEMENT INFORMATION SYSTEM (MIS)</b> REPORT FOR OFFICES OF CHAIRMAN, BOARD OF DIRECTORS, CEO & VICE PRESIDENT <br>
+                                                    MAIL & BACKUP SERVERS MANAGEMENT<br>
+                                                    ORACLE APPLICATION MAINTENANCE & MANAGEMENT<br>
+                                                    COMPUTER RELATED JOBS MANAGEMENT IN M.D. SECRETARIATE<br>
+                                                    NETWORKING MAINTENANCE & MANAGEMENT</td>
+                                            </tr>
+            
+                </table>
+            </div>
+        </div>
+        <div class="accordian-tab">
+            <input type="checkbox" id="toggle3" class="accordion-toggle" name="toggle">
+            <label for="toggle3">SYSTEM EXPOSURE</label> 
+            <div class="accordion-content">
+                                <table>
+                                    <tr>
+                                        <th colspan="4"> <b>SYSTEM EXPOSURE</b></th>
+    
+                                    </tr>
+                                    <tr>
+                                        <td COLSPAN="2">OPERATING SYSTEMS</td>
+                                        <td colspan="2">WINDOWS XP, WINDOWS 10, FEDORA, REDHAT </td>
+                                        <tr>
+                                            <td COLSPAN="2">WEB TECHNOLOGIES</td>
+                                        <td COLSPAN="2"> HTML 5.0, CSS 3.0, VISUAL STUDIO CODE</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="2">NETWORKING </td>
+                                                                            <td COLSPAN="2"> LAN, STAR TOPOLOGY</td> 
+                                                                         </tr>
+                                                                            <tr>
+                                                                                <td colspan="2">RDBMS & SQL</td>
+                                                                                <td COLSPAN="2"> Oracle 10g, Oracle 12c, FORMS 6.0, REPORTS 6.0, SQL </td> 
+                                                                                </tr>
+                                                                                <tr>
+    
+                                </table>
+            </div>
+        </div>
+        <div class="accordian-tab">
+            <input type="checkbox" id="toggle4" class="accordion-toggle" name="toggle">
+            <label for="toggle4">PROFESSIONAL & ACADEMIC CREDENTIALS</label> 
+            <div class="accordion-content">
+                <table>
+                    <tr>
+                        <th colspan="4">PROFESSIONAL CREDENTIALS </th>
+                    </tr>
+                    <tr>
+                        <td>2001</td>
+                        <td COLSPAN="2">CERTIFICATE IN ORACLE 8i -DEVELOPER 2000-FORMS 6.0 AND REPORTS 6.0</td>
+                        <td> STG</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                        <td COLSPAN="2">POST GRADUATE DIPLOMA IN BUSINESS ADMINISTRATION</td>
+                        <td> ANNAMALAI UNIVERSITY</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1991</td>
+                        <td COLSPAN="2">DIPLOMA IN COMPUTER ANALYSIS & SYSTEM ANALYSIS</td>
+                        <td> NATIONAL COMPUTING SERVICES</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">ACADEMIC CREDENTIALS </th>
+                                </tr>
+                                <tr>
+                                    <td>1989</td>
+                        <td COLSPAN="2">M.A. (ECONOMICS)</td>
+                        <td> MEERUT UNIVERSITY</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1987</td>
+                        <td COLSPAN="2">B.Sc.</td>
+                        <td> MEERUT IUNIVERSITY</td>
+                               </tr>
+               </table>                                 
+            </div>
+        </div>
+        <div class="accordian-tab">
+            <input type="checkbox" id="toggle5" class="accordion-toggle" name="toggle">
+            <label for="toggle5">PERSONAL DETAILS</label> 
+            <div class="accordion-content">
+                         <table>
+                     <tr>
+                        <td colspan="2">DATE OF BIRTH</td>
+                        <TD colspan="2">JANUARY 13, 1965</TD>
+                    </tr>
+                    <tr>
+                    <td colspan="2">FATHER NAME</td>
+                    <td colspan="2">Shri R.P. GAUR</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">LAST CTC DRAWN</td>
+                        <td colspan="2">INR 5.75 LAKHS</td>
+                 </tr>
+                </table>
+        </div>
+        </div>
+    </div>
+  </body>
+</html>
