@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Girish Gaur - Advisor at Niva Bupa Health Insurance, Saharanpur, India">
+    <title>Girish Gaur - Axis Max Life Insurance Advisor<br<<title>Personal Finance & Life Goals Survey</title></title>
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+      </head>
+
+<style>
+  :root {
+    --navy: #0000ff;
+    --gold: #c9954a;
+    --gold-light: #e8c48a;
+    --cream: #faf7f2;
+    --warm-white: #fffef9;
+    --muted: #6b7280;
+    --border: #e8e0d5;
+    --accent: #2d5a8e;
+    --success: #2e7d50;
+     --card-shadow: 0 2px 16px rgba(26,39,68,0.09);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--maroon);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+    padding: 0 0 60px 0;
+  }
+
+  header {
+            background: linear-gradient(130deg,#f17a2a,#003366);
+                       color: white;
+            padding: 20px 0;
+            text-align: center;                 }
+
+ header h1 {
+            margin: 0;
+            font-size: 2.5em; }
+        header h2 {
+            margin: 5px 0 20px;
+            font-size: 1.5em;        }
+
+
+
+  /* Header Banner */
+  .form-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--accent) 60%, #1e4a7a 100%);
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .form-header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -80px;
+    width: 260px; height: 260px;
+    border-radius: 50%;
+    background: rgba(201,149,74,0.13);
+  }
+  .form-header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -50px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(201,149,74,0.09);
+  }
+  .header-badge {
+    display: inline-block;
+    background: rgba(201,149,74,0.18);
+    border: 1px solid rgba(201,149,74,0.4);
+    color: var(--gold-light);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+  .form-header h1 {
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .form-header p {
+    color: rgba(255,255,255,0.72);
+    font-size: 20px;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+    position: relative;
+  }
+  .header-accent-line {
+    width: 48px; height: 3px;
+    background: var(--gold);
+    border-radius: 2px;
+    margin: 18px auto 0;
+  }
+
+  /* Progress Bar */
+  .progress-wrap {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .progress-label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .progress-bar-track {
+    flex: 1;
+    height: 5px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--accent));
+    border-radius: 3px;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+  .progress-pct { font-size: 12px; font-weight: 600; color: var(--accent); min-width: 36px; }
+
+  /* Form Container */
+  .form-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 28px 16px 0;
+  }
+
+  /* Section Header */
+  .section-header {
+    background: var(--navy);
+    border-radius: 12px 12px 0 0;
+    padding: 20px 28px;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: rgba(201,149,74,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.2px;
+  }
+  .section-header p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 2px;
+  }
+
+  /* Card */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-top: none;
+    padding: 24px 28px;
+  }
+  .card:last-of-type, .card.card-last {
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 0;
+  }
+  .card + .card { border-top: 1px solid var(--border); }
+
+  /* Question */
+  .question-label {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 14px;
+    line-height: 1.5;
+    display: flex;
+    gap: 6px;
+  }
+  .q-num {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold);
+    background: rgba(201,149,74,0.1);
+    border-radius: 4px;
+    padding: 2px 7px;
+    height: fit-content;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+  .required-star { color: #c0392b; margin-left: 2px; }
+
+  /* Inputs */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--navy);
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(45,90,142,0.1);
+  }
+  textarea { resize: vertical; min-height: 80px; }
+  select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7280' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+
+  /* Radio & Checkbox */
+  .options-list { display: flex; flex-direction: column; gap: 10px; }
+  .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.18s;
+    background: #fff;
+  }
+  .option-item:hover { border-color: var(--accent); background: rgba(45,90,142,0.03); }
+  .option-item input[type="radio"],
+  .option-item input[type="checkbox"] {
+    width: 16px; height: 16px;
+    accent-color: var(--accent);
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 0; padding: 0; border: none; box-shadow: none;
+  }
+  .option-item.selected {
+    border-color: var(--accent);
+    background: rgba(45,90,142,0.05);
+  }
+  .option-text { font-size: 13.5px; color: var(--navy); line-height: 1.4; }
+
+  /* Range Slider */
+  .range-wrap { padding: 4px 0; }
+  input[type="range"] {
+    width: 100%; height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+  .range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .range-value {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 6px;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  /* Helper text */
+  .helper { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  /* Divider */
+  .q-divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+  /* Submit Section */
+  .submit-section {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin-top: 28px;
+    text-align: center;
+  }
+  .submit-note {
+    font-size: 20px;
+    color: var(--blue);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .submit-btn {
+    background: linear-gradient(135deg, var(--navy), var(--accent));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.3px;
+  }
+ .email {
+    background: linear-gradient(135deg, var(--navy), var(--accent));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    letter-spacing: 0.3px;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(26,39,68,0.25);
+  }
+  .submit-btn:active { transform: translateY(0); }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 36px;
+    padding: 0 16px;
+color: var(--navy);
+  }
+  .footer p { font-size: 18px; color: var(--navy); }
+  .footer strong { color: var(--navy); }
+
+  /* Success */
+  .success-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,39,68,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .success-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 36px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    animation: popIn 0.3s ease;
+  }
+  @keyframes popIn {
+    from { transform: scale(0.92); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .success-icon { font-size: 48px; margin-bottom: 16px; }
+  .success-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+  .success-card p { font-size:20px; color: var(--muted); line-height: 1.6; }
+  .close-btn {
+    margin-top: 24px;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 480px) {
+    .options-grid { grid-template-columns: 1fr; }
+    .card { padding: 18px 16px; }
+    .section-header { padding: 16px 18px; }
+  }
+ 
+   p{
+  font-weight: bold;
+text-align: justify;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ padding: 10px;
+margin: 5px;
+font-size:25px;
+color:white;}
+
+footer1 {
+            background: linear-gradient(180deg,#f17a2a,#003366);
+            font-size:20px;     
+   
+    padding: 10px;
+    color: white;
+    text-align: justify;
+ max-width: auto;
+ 
+}   
+
+
+ 
+       </style>
+</head>
+  
+<body>
+  <div class="container-fluid">
+                           <div class="row">
+                <div class="col-sm-12">
+                                   <div class="container1" style="width:inherit;">
+  <header>
+<img src="https://raw.githubusercontent.com/girish8360/amli/main/GridArt_20250228_090331226.jpg" style="float:left;"width="300px;padding-left:60px;">
+<img src="https://raw.githubusercontent.com/girish8360/amli/main/nb.jpg" width="200px;height:50px;" style="float:right;padding-right:30px;">
+<h1 style="margin-left:5%;margin-right:25%;color:azure; text-align:center;font-weight:bolder">GIRISH GAUR</h1> 
+<h2 style="margin-left:25%;margin-right:25%;color:azure; text-align:right;font-weight:bolder"> Advisor, AXIS MAX LIFE  INSURANCE <br>NIVA BUPA HEALTH INSURANCE  </h2> 
+      </header>
+
+<!-- Header -->
+<div class="form-header">
+  <div class="header-badge">Life Insurance Advisory</div>
+  <h1>Personal Finance & Future Goals<br><em>Assessment Survey</em></h1>
+  <p>Help us understand your financial landscape so we can build a protection plan tailored to your family's most important milestones.</p>
+  <div class="header-accent-line"></div>
+</div>
+
+<!-- Sticky Progress -->
+<div class="progress-wrap">
+  <span class="progress-label">Completion</span>
+  <div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div>
+  <span class="progress-pct" id="progressPct">0%</span>
+</div>
+
+<div class="form-container">
+
+<!-- ──────────────────────────────────────
+     SECTION 1: Personal Details
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">👤</div>
+  <div>
+    <h2>Section A — Personal & Household Details</h2>
+    <p>Basic information about you and your family</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q1</span> Full Name <span class="required-star">*</span></div>
+  <input type="text" placeholder="Enter your full name">
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q2</span>Date of Birth <span class="required-star">*</span></div>
+  <input type="date" placeholder="Enter your Date of Birth">
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q3</span> Gender <span class="required-star">*</span></div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="sex"><span class="option-text">Male</span></label>
+    <label class="option-item"><input type="radio" name="sex"><span class="option-text">Female</span></label>
+    
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q4</span> Age Group <span class="required-star">*</span></div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">Below 25 years</span></label>
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">25 – 34 years</span></label>
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">35 – 44 years</span></label>
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">45 – 54 years</span></label>
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">55 – 60 years</span></label>
+    <label class="option-item"><input type="radio" name="age"><span class="option-text">Above 60 years</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q5</span> Marital Status <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="marital"><span class="option-text">Single</span></label>
+    <label class="option-item"><input type="radio" name="marital"><span class="option-text">Married</span></label>
+    <label class="option-item"><input type="radio" name="marital"><span class="option-text">Divorced / Separated</span></label>
+    <label class="option-item"><input type="radio" name="marital"><span class="option-text">Widowed</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q6</span> Number of Dependent Children</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="children"><span class="option-text">None</span></label>
+    <label class="option-item"><input type="radio" name="children"><span class="option-text">1 child</span></label>
+    <label class="option-item"><input type="radio" name="children"><span class="option-text">2 children</span></label>
+    <label class="option-item"><input type="radio" name="children"><span class="option-text">3 or more</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q7</span> Current Occupation / Employment Type <span class="required-star">*</span></div>
+  <select>
+    <option value="" disabled selected>Select your occupation type</option>
+    <option>Salaried – Government / PSU</option>
+    <option>Salaried – Private Sector</option>
+    <option>Self-Employed / Business Owner</option>
+    <option>Professional (Doctor, CA, Lawyer, etc.)</option>
+    <option>Freelancer / Consultant</option>
+    <option>Homemaker (financially dependent)</option>
+    <option>Retired</option>
+    <option>Other</option>
+  </select>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q8</span> Contact No<span class="required-star">*</span></div>
+  <input type="number" maxlength="10" size="10" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required">
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q9</span> Email ID, if any </span></div>
+  <input type="email"  id="email" maxlength="20" size="20" placeholder="Enter email" name="email">
+</div>
+
+
+<!-- ──────────────────────────────────────
+     SECTION 2: Income & Finances
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">💰</div>
+  <div>
+    <h2>Section B — Income Sources & Financial Profile</h2>
+    <p>Understanding where your money comes from today</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q10</span> Annual Household Income (Gross, approx.) <span class="required-star">*</span></div>
+  <select>
+    <option value="" disabled selected>Select income range</option>
+    <option>Below ₹3 Lakh</option>
+    <option>₹3 – 6 Lakh</option>
+    <option>₹6 – 10 Lakh</option>
+    <option>₹10 – 15 Lakh</option>
+    <option>₹15 – 25 Lakh</option>
+    <option>₹25 – 50 Lakh</option>
+    <option>Above ₹50 Lakh</option>
+    <option>Prefer not to disclose</option>
+  </select>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q11</span> Primary Sources of Income <em>(Select all that apply)</em> <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">Monthly Salary / Wages</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Business / Partnership Profits</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Rental Income (property)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Dividends & Capital Gains (Investments)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Agricultural Income</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Pension / Annuity</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Freelance / Consulting Fees</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Interest from Fixed Deposits / Bonds</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q12</span> How stable / consistent is your primary income? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="stability"><span class="option-text">Very stable – fixed monthly salary</span></label>
+    <label class="option-item"><input type="radio" name="stability"><span class="option-text">Mostly stable – minor seasonal variation</span></label>
+    <label class="option-item"><input type="radio" name="stability"><span class="option-text">Moderate – income varies significantly month to month</span></label>
+    <label class="option-item"><input type="radio" name="stability"><span class="option-text">Irregular – highly variable / project-based</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q13</span> What % of your monthly income do you currently save or invest?</div>
+  <div class="range-wrap">
+    <div class="range-value" id="savingsVal">10%</div>
+    <input type="range" min="0" max="60" step="5" value="10" oninput="document.getElementById('savingsVal').textContent=this.value+'%'">
+    <div class="range-labels"><span>0%</span><span>10%</span><span>20%</span><span>30%</span><span>40%</span><span>50%</span><span>60%+</span></div>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q14</span> Do you have any existing financial liabilities? <em>(Select all that apply)</em></div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">Home Loan / Mortgage</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Vehicle Loan</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Personal Loan</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Education Loan</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Credit Card Outstanding</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Business Loan</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">No existing liabilities</span></label>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────
+     SECTION 3: Children's Education
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">🎓</div>
+  <div>
+    <h2>Section C — Children's Higher Education Planning</h2>
+    <p>Ensuring funds are ready when your child needs them most</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q15</span> Do you have a specific financial plan for your child(ren)'s higher education? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="edu_plan"><span class="option-text">Yes – I have a dedicated savings / investment plan</span></label>
+    <label class="option-item"><input type="radio" name="edu_plan"><span class="option-text">Partially – I have started saving but no structured plan</span></label>
+    <label class="option-item"><input type="radio" name="edu_plan"><span class="option-text">No – I haven't started yet</span></label>
+    <label class="option-item"><input type="radio" name="edu_plan"><span class="option-text">Not applicable </span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q16</span> Estimated cost of higher education you expect per child (current value)</div>
+  <select>
+    <option value="" disabled selected>Select estimated amount</option>
+ 
+    <option>Below ₹5 Lakh</option>
+    <option>₹5 – 10 Lakh</option>
+    <option>₹10 – 20 Lakh</option>
+    <option>₹20 – 40 Lakh</option>
+    <option>₹40 – 75 Lakh</option>
+    <option>Above ₹75 Lakh (international / premium)</option>
+    <option>Not sure / Need guidance</option>
+<option>Not Applicable</option>
+  </select>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q17</span> When do you expect to need these education funds?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="edu_time"><span class="option-text">Within 3 years</span></label>
+    <label class="option-item"><input type="radio" name="edu_time"><span class="option-text">3 – 7 years</span></label>
+    <label class="option-item"><input type="radio" name="edu_time"><span class="option-text">7 – 12 years</span></label>
+    <label class="option-item"><input type="radio" name="edu_time"><span class="option-text">More than 12 years away</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q18</span> What is your plan if you are unable to fund education due to an unforeseen event (death / disability)?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="edu_contingency"><span class="option-text">I have life / term insurance to cover this</span></label>
+    <label class="option-item"><input type="radio" name="edu_contingency"><span class="option-text">My spouse / family member will manage</span></label>
+    <label class="option-item"><input type="radio" name="edu_contingency"><span class="option-text">I rely on education loans</span></label>
+    <label class="option-item"><input type="radio" name="edu_contingency"><span class="option-text">I haven't thought about this scenario</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q19</span> Are you interested in an insurance-backed child education plan (guaranteed corpus at maturity)?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="edu_insurance"><span class="option-text">Yes, very interested</span></label>
+    <label class="option-item"><input type="radio" name="edu_insurance"><span class="option-text">Maybe – I need more information</span></label>
+    <label class="option-item"><input type="radio" name="edu_insurance"><span class="option-text">No, I prefer other investment options</span></label>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────
+     SECTION 4: Children's Marriage
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">💍</div>
+  <div>
+    <h2>Section D — Children's Marriage Expenses Planning</h2>
+    <p>Planning ahead for one of life's biggest milestones</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q20</span> Have you started saving for your child(ren)'s marriage expenses?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="marriage_saving"><span class="option-text">Yes – I have a dedicated fund or policy</span></label>
+    <label class="option-item"><input type="radio" name="marriage_saving"><span class="option-text">I save informally (gold, FDs, RDs)</span></label>
+    <label class="option-item"><input type="radio" name="marriage_saving"><span class="option-text">Not yet – planning to start</span></label>
+    <label class="option-item"><input type="radio" name="marriage_saving"><span class="option-text">Not applicable</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q21</span> Estimated total expense target for each child's marriage (today's value)</div>
+  <select>
+    <option value="" disabled selected>Select amount</option>
+    <option>Below ₹5 Lakh</option>
+    <option>₹5 – 15 Lakh</option>
+    <option>₹15 – 30 Lakh</option>
+    <option>₹30 – 50 Lakh</option>
+    <option>₹50 Lakh – ₹1 Crore</option>
+    <option>Above ₹1 Crore</option>
+    <option>Unsure / Need advisor's help</option>
+  </select>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q22</span> How far away (approx.) is your child's expected marriage?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="marriage_time"><span class="option-text">Within 5 years</span></label>
+    <label class="option-item"><input type="radio" name="marriage_time"><span class="option-text">5 – 10 years</span></label>
+    <label class="option-item"><input type="radio" name="marriage_time"><span class="option-text">10 – 15 years</span></label>
+    <label class="option-item"><input type="radio" name="marriage_time"><span class="option-text">More than 15 years</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q23</span> How do you intend to fund marriage expenses primarily?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">Savings accumulation over time</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Gold / Jewellery accumulated</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Insurance maturity proceeds</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Mutual Fund / SIP returns</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Real estate sale proceeds</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Personal loan / credit at time of event</span></label>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────
+     SECTION 5: Medical Emergency
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">🏥</div>
+  <div>
+    <h2>Section E — Medical Emergency & Old Age Health Fund</h2>
+    <p>Protecting your family from unexpected health costs</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q24</span> Do you currently have health insurance coverage? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="health_ins"><span class="option-text">Yes – employer-provided group health policy</span></label>
+    <label class="option-item"><input type="radio" name="health_ins"><span class="option-text">Yes – individual / family floater policy</span></label>
+    <label class="option-item"><input type="radio" name="health_ins"><span class="option-text">Both employer + personal policy</span></label>
+    <label class="option-item"><input type="radio" name="health_ins"><span class="option-text">No health insurance at the moment</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q25</span> What is your current health insurance sum insured (total family)?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">Below ₹3 Lakh</span></label>
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">₹3 – 5 Lakh</span></label>
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">₹5 – 10 Lakh</span></label>
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">₹10 – 25 Lakh</span></label>
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">Above ₹25 Lakh</span></label>
+    <label class="option-item"><input type="radio" name="health_sum"><span class="option-text">No coverage</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q26</span> Do you have a dedicated Medical Emergency Fund (liquid savings set aside for health)?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="med_fund"><span class="option-text">Yes – more than 6 months of expenses set aside</span></label>
+    <label class="option-item"><input type="radio" name="med_fund"><span class="option-text">Partial – 2–3 months of expenses</span></label>
+    <label class="option-item"><input type="radio" name="med_fund"><span class="option-text">No specific emergency fund</span></label>
+    <label class="option-item"><input type="radio" name="med_fund"><span class="option-text">I rely entirely on insurance</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q27</span> Are any of your elderly parents / in-laws financially dependent on you for medical expenses?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="parents_dep"><span class="option-text">Yes – both sets</span></label>
+    <label class="option-item"><input type="radio" name="parents_dep"><span class="option-text">Yes – one set</span></label>
+    <label class="option-item"><input type="radio" name="parents_dep"><span class="option-text">No – they are self-sufficient</span></label>
+    <label class="option-item"><input type="radio" name="parents_dep"><span class="option-text">Not applicable</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q28</span> Do you have a Critical Illness / Serious Disease rider or policy?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="critical"><span class="option-text">Yes – standalone critical illness policy</span></label>
+    <label class="option-item"><input type="radio" name="critical"><span class="option-text">Yes – as a rider on my life insurance</span></label>
+    <label class="option-item"><input type="radio" name="critical"><span class="option-text">No – but I'm interested</span></label>
+    <label class="option-item"><input type="radio" name="critical"><span class="option-text">No – and not planning to get one</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q29</span> How much are you willing to set aside monthly for building an old-age medical fund?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="monthly_med"><span class="option-text">Up to ₹2,000/mo</span></label>
+    <label class="option-item"><input type="radio" name="monthly_med"><span class="option-text">₹2,000 – ₹5,000/mo</span></label>
+    <label class="option-item"><input type="radio" name="monthly_med"><span class="option-text">₹5,000 – ₹10,000/mo</span></label>
+    <label class="option-item"><input type="radio" name="monthly_med"><span class="option-text">Above ₹10,000/mo</span></label>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────
+     SECTION 6: Retirement Planning
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">🌅</div>
+  <div>
+    <h2>Section F — Post-Retirement Planning</h2>
+    <p>Planning a financially independent and dignified retirement</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q30</span> At what age do you plan / wish to retire?</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">Before 50</span></label>
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">50 – 55</span></label>
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">55 – 60</span></label>
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">60 – 65</span></label>
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">65 or later</span></label>
+    <label class="option-item"><input type="radio" name="retire_age"><span class="option-text">Already retired</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q31</span> Do you have any existing retirement savings or pension plan? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">EPF / GPF (Provident Fund)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">PPF (Public Provident Fund)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">NPS (National Pension System)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Pension from employer (defined benefit)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Annuity / Retirement plan from insurer</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Mutual Funds / Equity marked for retirement</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">None of the above</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q32</span> What monthly income (today's value) would you need post-retirement to maintain your lifestyle?</div>
+  <select>
+    <option value="" disabled selected>Select monthly income need</option>
+    <option>Below ₹20,000 / month</option>
+    <option>₹20,000 – ₹40,000 / month</option>
+    <option>₹40,000 – ₹75,000 / month</option>
+    <option>₹75,000 – ₹1.5 Lakh / month</option>
+    <option>Above ₹1.5 Lakh / month</option>
+    <option>Not sure – need a needs analysis</option>
+  </select>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q33</span> How many years of retirement income do you need to plan for? (Estimated longevity)</div>
+  <div class="options-grid">
+    <label class="option-item"><input type="radio" name="longevity"><span class="option-text">10 – 15 years</span></label>
+    <label class="option-item"><input type="radio" name="longevity"><span class="option-text">15 – 20 years</span></label>
+    <label class="option-item"><input type="radio" name="longevity"><span class="option-text">20 – 25 years</span></label>
+    <label class="option-item"><input type="radio" name="longevity"><span class="option-text">25+ years (planning beyond 85)</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q34</span> Do you expect to be financially dependent on your children post-retirement?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="child_depend"><span class="option-text">No – I intend to be fully self-sufficient</span></label>
+    <label class="option-item"><input type="radio" name="child_depend"><span class="option-text">Partially – for major expenses only</span></label>
+    <label class="option-item"><input type="radio" name="child_depend"><span class="option-text">Yes – I will rely on children for support</span></label>
+    <label class="option-item"><input type="radio" name="child_depend"><span class="option-text">Uncertain at this stage</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q35</span> What are your biggest concerns about retirement? <em>(Select top 3)</em></div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">Outliving my savings (longevity risk)</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Rising healthcare & medical costs</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Inflation eroding purchasing power</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Not having a stable monthly income stream</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Being a financial burden on children</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Market volatility affecting my corpus</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">Spouse's financial security if I pass away first</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q36</span> Are you interested in a guaranteed annuity / pension plan that pays a fixed amount for life?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="annuity"><span class="option-text">Yes – security of fixed lifetime income appeals to me</span></label>
+    <label class="option-item"><input type="radio" name="annuity"><span class="option-text">Maybe – I'd like to explore and compare options</span></label>
+    <label class="option-item"><input type="radio" name="annuity"><span class="option-text">No – I prefer market-linked investment returns</span></label>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────
+     SECTION 7: Risk & Preferences
+─────────────────────────────────────── -->
+<div class="section-header">
+  <div class="section-icon">⚖️</div>
+  <div>
+    <h2>Section G — Risk Profile & Planning Preferences</h2>
+    <p>Your comfort with risk shapes the right strategy</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q37</span> How would you describe your overall financial risk appetite? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="risk"><span class="option-text">Conservative – capital safety over returns; prefer FDs, PPF, guaranteed plans</span></label>
+    <label class="option-item"><input type="radio" name="risk"><span class="option-text">Moderate – balanced approach; mix of safe and market-linked</span></label>
+    <label class="option-item"><input type="radio" name="risk"><span class="option-text">Moderately Aggressive – willing to take some equity risk for higher growth</span></label>
+    <label class="option-item"><input type="radio" name="risk"><span class="option-text">Aggressive – fully comfortable with high market risk for maximum wealth creation</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q38</span> Which of these goals are MOST IMPORTANT to you right now? <em>(Rank your top 3)</em></div>
+  <div class="options-list">
+    <label class="option-item"><input type="checkbox"><span class="option-text">🎓 Children's higher education funding</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">💍 Children's marriage corpus</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">🏥 Medical emergency fund for old age</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">🌅 Post-retirement monthly income</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">🏠 Paying off home loan before retirement</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">🛡️ Life cover / income replacement for family</span></label>
+    <label class="option-item"><input type="checkbox"><span class="option-text">💼 Wealth creation & legacy planning</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q39</span> Do you have an existing life insurance policy? <span class="required-star">*</span></div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">Yes – Term Life Insurance</span></label>
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">Yes – Endowment / Traditional Policy</span></label>
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">Yes – ULIP (Unit Linked Insurance Plan)</span></label>
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">Yes – Whole Life Policy</span></label>
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">Multiple policies across types</span></label>
+    <label class="option-item"><input type="radio" name="life_ins"><span class="option-text">No life insurance currently</span></label>
+  </div>
+</div>
+
+<div class="card">
+  <div class="question-label"><span class="q-num">Q40</span> How do you prefer to receive your advisor's recommendation?</div>
+  <div class="options-list">
+    <label class="option-item"><input type="radio" name="pref_consult"><span class="option-text">In-person meeting at my location</span></label>
+    <label class="option-item"><input type="radio" name="pref_consult"><span class="option-text">Video call (Zoom / Google Meet)</span></label>
+    <label class="option-item"><input type="radio" name="pref_consult"><span class="option-text">Phone call</span></label>
+    <label class="option-item"><input type="radio" name="pref_consult"><span class="option-text">Written report / email summary first, then call</span></label>
+  </div>
+</div>
+
+<div class="card card-last">
+  <div class="question-label"><span class="q-num">Q41</span> Any specific financial concerns, goals, or questions you'd like your advisor to address?</div>
+  <textarea placeholder="Share any specific details, concerns, or priorities you'd like your advisor to know about…"></textarea>
+  <p class="helper">This helps us personalise your financial review session.</p>
+</div>
+
+<!-- Submit -->
+<div class="submit-section">
+  <p class="submit-note">
+    By submitting, you confirm that the information provided is accurate to the best of your knowledge. Your responses are confidential and will be used solely to prepare a personalised financial needs analysis. A certified life insurance advisor will reach out within <strong>1–2 business days</strong>.
+  </p>
+  <button class="submit-btn" onclick="handleSubmit()">Submit Survey →</button>
+<button class="email" onclick="form action="https://formsubmit.co/girish.garry4u@gmail.com" method="POST">Email Form</button>
+
+
+</div>
+
+<div class="footer">
+  <p>Thank you for taking the time to complete this questionnaire! 🙏 Your input is invaluable in helping us understand your health insurance needs and medical emergency preparedness. I appreciate your time and honesty in sharing your thoughts and concerns <br>
+Based on your responses, I hope to have a better understanding of how to assist you in securing your health and financial well-being. If you're interested in learning more about AXIS MAX LIFE INSURANCE PRODUCTS or need help in creating a guaranteed income strategy, I would be glad to assist you. <br>
+
+
+🔒 <strong>Confidential</strong> · This survey is powered for internal use by <strong> GIRISH GAUR</strong>,  Life Insurance Advisor on behalf of <b>AXIS MAX LIFE INSURANCE</b> · All data is handled securely<br>
+
+Feel free to reach out to us for personalized support and guidance. 👍 Stay healthy and secure!"
+  
+      </div>
+
+
+</p>
+</div>
+
+</div><!-- /.form-container -->
+
+<!-- Success Modal -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-card">
+    <div class="success-icon">✅</div>
+    <h3>Survey Submitted!</h3>
+    <p>Thank you for completing the Personal Finance Assessment. Your advisor will review your responses and reach out within <strong>1–2 business days</strong> with a tailored plan.</p>
+    <button class="close-btn" onclick="closeSuccess()">Close</button>
+  </div>
+</div>
+
+<script>
+  // Progress tracking
+  function updateProgress() {
+    const allInputs = document.querySelectorAll('input[type="radio"]:checked, input[type="checkbox"]:checked, input[type="text"], input[type="number"], select, textarea');
+    const required = document.querySelectorAll('input[type="radio"][name], input[type="text"], select');
+    
+    // Count answered groups
+    const radioGroups = new Set();
+    document.querySelectorAll('input[type="radio"]:checked').forEach(r => radioGroups.add(r.name));
+    const checkboxGroups = new Set();
+    document.querySelectorAll('input[type="checkbox"]:checked').forEach(c => {
+      const card = c.closest('.card');
+      if (card) checkboxGroups.add(card);
+    });
+    const filledText = Array.from(document.querySelectorAll('input[type="text"], textarea')).filter(i => i.value.trim()).length;
+    const filledSelect = Array.from(document.querySelectorAll('select')).filter(s => s.value).length;
+    
+    const answered = radioGroups.size + checkboxGroups.size + filledText + filledSelect;
+    const total = 37;
+    const pct = Math.min(Math.round((answered / total) * 100), 100);
+    
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressPct').textContent = pct + '%';
+  }
+
+  // Option highlight
+  document.querySelectorAll('.option-item input').forEach(input => {
+    input.addEventListener('change', function() {
+      if (this.type === 'radio') {
+        const name = this.name;
+        document.querySelectorAll(`input[name="${name}"]`).forEach(r => {
+          r.closest('.option-item').classList.remove('selected');
+        });
+      }
+      if (this.checked) {
+        this.closest('.option-item').classList.add('selected');
+      } else {
+        this.closest('.option-item').classList.remove('selected');
+      }
+      updateProgress();
+    });
+  });
+
+  document.querySelectorAll('select, input[type="text"], textarea').forEach(el => {
+    el.addEventListener('input', updateProgress);
+    el.addEventListener('change', updateProgress);
+  });
+
+  function handleSubmit() {
+    document.getElementById('successOverlay').style.display = 'flex';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function closeSuccess() {
+    document.getElementById('successOverlay').style.display = 'none';
+  }
+</script>
+ 
+  
+</body>
+</html>

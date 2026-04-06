@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Code Generator</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(90deg,#0a0a0a,#0000ff);
+    font-family: sans-serif;
+}
+.box{
+    background:#0000ff;
+    padding:25px;
+    width:400px;
+    border-radius:10px;
+    color:white;
+}
+input, select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:5px;
+    border:none;
+}
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    margin:5px;
+    font-weight:bold;
+}
+#generateBtn{ background:white; color:blue; }
+#downloadBtn{ background:white; color:green; }
+.qr-body{
+    text-align:center;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h3 class="text-center">QR Code Generator <br>
+-GIRISH GAUR</h3>
+
+    <input type="text" id="qr-text" placeholder="Enter text or URL">
+
+    <select id="size">
+        <option value="100">100x100</option>
+        <option value="200">200x200</option>
+        <option value="300">300x300</option>
+        <option value="400">400x400</option>
+    </select>
+
+    <div class="text-center">
+        <button id="generateBtn">Generate</button>
+        <button id="downloadBtn">Download</button>
+    </div>
+
+    <div class="qr-body" id="qr-container"></div>
+</div>
+
+<script>
+const qrText = document.getElementById('qr-text');
+const sizeSelect = document.getElementById('size');
+const generateBtn = document.getElementById('generateBtn');
+const downloadBtn = document.getElementById('downloadBtn');
+const qrContainer = document.getElementById('qr-container');
+
+let qrCode;
+
+generateBtn.addEventListener('click', () => {
+    if(qrText.value.trim() === ""){
+        alert("Please enter text or URL");
+        return;
+    }
+
+    qrContainer.innerHTML = "";
+
+    qrCode = new QRCode(qrContainer, {
+        text: qrText.value,
+        width: parseInt(sizeSelect.value),
+        height: parseInt(sizeSelect.value)
+    });
+});
+
+downloadBtn.addEventListener('click', () => {
+    const img = qrContainer.querySelector('img');
+    const canvas = qrContainer.querySelector('canvas');
+
+    if(img){
+        const link = document.createElement('a');
+        link.href = img.src;
+        link.download = "qr-code.png";
+        link.click();
+    }
+    else if(canvas){
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL();
+        link.download = "qr-code.png";
+        link.click();
+    }
+    else{
+        alert("Generate QR code first!");
+    }
+});
+</script>
+
+</body>
+</html>
